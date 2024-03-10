@@ -1,0 +1,71 @@
+/* CSS */
+
+.burger-wraper {
+  background: url('../img/burger-books.png'),
+    radial-gradient(
+      189.32% 190.93% at 59.76% -23.42%,
+      rgb(79, 46, 232) 18.02733987569809%,
+      rgb(255, 255, 255) 100%
+    );
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  transition: right 0.3s ease;
+}
+
+.burger-body {
+  display: block;
+  margin: 0 auto;
+  margin-top: 250px;
+  box-sizing: content-box;
+  padding: 0;
+  width: 160px;
+  height: 70px;
+}
+
+.burger-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.burger-list-item a {
+  border-radius: 36px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--white-color);
+  fill: var(--white-color);
+  padding: 8px 16px;
+}
+
+.home .burger-list-item:first-child a {
+  color: var(--dark-color);
+  background-color: var(--gold-color);
+}
+.shop-list-page .burger-list-item:nth-child(2) a {
+  background-color: var(--gold-color);
+  color: var(--dark-color);
+  fill: var(--dark-color);
+}
+.burger-icon {
+  width: 16px;
+  height: 16px;
+  fill: inherit;
+}
+
+.menu-is-closed {
+  right: -100%;
+}
+
+.menu-is-open {
+  right: 0;
+}
